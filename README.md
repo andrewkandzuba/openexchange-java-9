@@ -2,9 +2,7 @@
 
 **Java 9 new features tutorial**
 
-## Maven and related tooling readiness 
-
-https://cwiki.apache.org/confluence/display/MAVEN/Java+9+-+Jigsaw
+# Features overview
 
 ## Modules support
 
@@ -15,3 +13,13 @@ To demonstrate the dynamic loading of modules following CLI commands need to be 
 2. mvn clean install
 3. To run application with "git" implementation run: java -p 'api/target/api-1.0.0-SNAPSHOT.jar;consumer/target/consumer-1.0.0-SNAPSHOT.jar;git/target/git-1.0.0-SNAPSHOT.jar' -m event.registry.cli/io.openexchange.schema.consumer.Application
 4. To run application with "hortonwork" implementation run: java -p 'api/target/api-1.0.0-SNAPSHOT.jar;consumer/target/consumer-1.0.0-SNAPSHOT.jar;hortonworks/target/hortonworks-1.0.0-SNAPSHOT.jar' -m event.registry.cli/io.openexchange.schema.consumer.Application
+
+## Miscellaneous
+
+### Maven readiness 
+
+https://cwiki.apache.org/confluence/display/MAVEN/Java+9+-+Jigsaw
+
+### Gradle readiness
+
+https://guides.gradle.org/building-java-9-modules/ 
